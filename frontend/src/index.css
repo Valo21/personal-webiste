@@ -1,0 +1,40 @@
+#root {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.max-width {
+  max-width: 1024px;
+  margin: auto;
+}
+
+@keyframes scrollUpInfinite {
+  0% {
+    transform: translateY(100%);
+  }
+  100% {
+    transform: translateY(-100%);
+  }
+}
+
+.scroll-up-infinite {
+  animation: scrollUpInfinite 10s linear infinite;
+}
+
+.scroll-up-infinite-late {
+  animation: scrollUpInfinite 11s linear infinite;
+}
+
+@keyframes floatUp {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-20px);
+  }
+}
+
+.float-up {
+  animation: floatUp 1s ease-in-out infinite alternate;
+}
