@@ -1,5 +1,5 @@
-import { Children, isValidElement, PropsWithChildren, useState } from "react";
-import { Link, NavLink } from "react-router";
+import { useState } from "react";
+import { NavLink } from "react-router";
 
 interface NavLinkProps {
   title: string;
@@ -92,9 +92,9 @@ export default function Footer() {
 
           <article className="row align-items-center mt-5 pt-3 border-top">
             <section className="col-md-6 d-flex flex-wrap align-items-center w-100 justify-content-center gap-3 py-3">
-              <a href="https://github.com/Valo21"><i className="bi bi-github text-black fs-3"></i></a>
-              <a href="https://www.instagram.com/valentin.faciano"><i className="bi bi-instagram text-black fs-3"></i></a>
-              <a href="https://www.linkedin.com/in/valentinfaciano"><i className="bi bi-linkedin text-black fs-3"></i></a>
+              <a href="https://github.com/Valo21" title="github"><i className="bi bi-github text-black fs-3"></i></a>
+              <a href="https://www.instagram.com/valentin.faciano" title="instagram"><i className="bi bi-instagram text-black fs-3"></i></a>
+              <a href="https://www.linkedin.com/in/valentinfaciano" title="Linkedin"><i className="bi bi-linkedin text-black fs-3"></i></a>
             </section>
             <div className="col-12 text-center text-muted pb-3">
               Copyright © 2025 Valentin Faciano. Todos lo derechos reservados
