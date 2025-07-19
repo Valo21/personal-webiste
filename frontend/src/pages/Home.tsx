@@ -61,36 +61,7 @@ function ProjectsSection() {
 function ExperienceSection() {
   return (
     <article className='bg-dark pt-5'>
-      <div className="container my-4">
-        <div className="row g-3">
-          <div className="col-md-6">
-            <div className="p-4 rounded text-white">
-              <div className="d-flex flex-column justify-content-between h-100">
-                <div>
-                  <small className="d-block mb-2">Holiday Deals</small>
-                  <h2 className="fw-bold mb-2">Up to<br/>30% off</h2>
-                  <p className="mb-3">Selected Smartphone Brands</p>
-                  <a href="#" className="btn btn-light">Shop</a>
-                </div>
-                <img src="https://dummyimage.com/150x150/000/fff&text=Phone" alt="Phone" className="img-fluid mt-3"/>
-              </div>
-            </div>
-          </div>
-          <div className="col-md-6">
-            <div className="p-4 rounded text-white" style={{background: 'linear-gradient(to right, #6a00f4, #8e2de2);'}}>
-              <div className="d-flex flex-column justify-content-between h-100">
-                <div>
-                  <small className="d-block mb-2">Just In</small>
-                  <h2 className="fw-bold mb-2">Take Your<br/>Sound Anywhere</h2>
-                  <p className="mb-3">Top Headphone Brands</p>
-                  <a href="#" className="btn btn-light">Shop</a>
-                </div>
-                <img src="https://dummyimage.com/150x150/000/fff&text=Headphones" alt="Headphones" className="img-fluid mt-3"/>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+      
     </article>
   )
 }
