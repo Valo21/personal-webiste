@@ -36,7 +36,7 @@ function ProjectsSection() {
   return (
     <article className='bg-black' id="projects">
        <section className="my-4">
-        <h2 className="text-center text-white">PROJECTS</h2>
+        <h2 className="text-center text-white pt-5">PROJECTS</h2>
        </section>
        <section className="container-fluid max-width p-5">
           <section className="row p-2">
@@ -96,13 +96,13 @@ export default function Home() {
                 </p>
               </section>
             </article>
-            <article className='col-12 col-md-4'>
+            {/* <article className='col-12 col-md-4'>
               <section>
                 <figure>
                   <img src="https://dummyimage.com/200x200/000/fff&text=Headphones" alt="Headphones" className="img-fluid mt-3"/>
                 </figure>
               </section>
-            </article>
+            </article> */}
         </section>
       </section>
 
@@ -162,8 +162,9 @@ export default function Home() {
             </article>**/}
         </section>
       </section>
-
+      
       <section className="bg-black text-white">
+        {/*
         <section className="container max-width py-5 row">
           <article className='col-12 col-md-4 p-1 float-up'>
             <section>
@@ -212,6 +213,7 @@ export default function Home() {
             </section>
           </article>
         </section>
+        */}
       </section>
 
       <section className="bg-black text-white">
@@ -232,7 +234,7 @@ export default function Home() {
               </p>
             </section>
           </article>
-          <article className='col-12 row'>
+          {/* <article className='col-12 row'>
             <figure className="col-md-4">
               <img src="/db-architecture.webp" alt="Headphones" className="img-fluid mt-3"/>
             </figure>
@@ -242,11 +244,11 @@ export default function Home() {
             <figure className="col-md-4">
               <img src="/db-architecture.webp" alt="Headphones" className="img-fluid mt-3"/>
             </figure>
-          </article>
+          </article> */}
         </section>
       </section>
       <WhatIOffer/>
-      <ExperienceSection/>
+      {/* <ExperienceSection/> */}
       <ProjectsSection/>
       <WebLogosCarousel/>
     </>

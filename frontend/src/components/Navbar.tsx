@@ -22,7 +22,7 @@ export default function Navbar() {
   return (
     <nav
       className={`navbar w-75 m-auto fixed-bottom mb-3 bottom-1 navbar-light bg-light rounded-3 shadow-lg px-4 py-2 transition-opacity ${
-        hidden ? 'opacity-0 pointer-events-none' : 'opacity-100'
+        hidden ? 'opacity-0 pointer-events-none invisible' : 'opacity-100'
       }`}
       style={{ transition: 'opacity 0.4s ease-in-out' }}
     >
@@ -52,7 +52,7 @@ export default function Navbar() {
             </li>
             <li className="nav-item">
               <NavLink
-                to="/projects"
+                to="/#projects"
                 className="nav-link"
                 data-bs-toggle="tooltip"
                 data-bs-placement="bottom"
