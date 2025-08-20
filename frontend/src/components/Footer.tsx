@@ -66,7 +66,8 @@ export default function Footer() {
                 {
                   ListLink([
                     { title: "My story", to: "/about" },
-                    { title: "Projects", to: "/projects" },
+                    { title: "Projects", to: "/#projects" },
+                    { title: "MTA", to: "/mta" },
                     { title: "What am i learning", to: "/learning" },
                   ])
                 }
@@ -81,7 +82,7 @@ export default function Footer() {
               <LinksAccordionItem title='Contact'>
                 {
                   ListLink([
-                    { title: "valentin.faciano.dev@gmail.com", to: "mailto:valentin.faciano.dev@gmail.com" },
+                    { title: "Gmail", to: "mailto:valentin.faciano.dev@gmail.com" },
                     { title: "LinkedIn", to: "https://www.linkedin.com/in/valentinfaciano" },
                     { title: "GitHub", to: "https://github.com/Valo21" },
                   ])
@@ -97,7 +98,7 @@ export default function Footer() {
               <a href="https://www.linkedin.com/in/valentinfaciano" title="Linkedin"><i className="bi bi-linkedin text-black fs-3"></i></a>
             </section>
             <div className="col-12 text-center text-muted pb-3">
-              Copyright © 2025 Valentin Faciano. Todos lo derechos reservados
+              Copyright © 2025 Valentin Faciano. All rights reserved
             </div>
           </article>
         </section>

@@ -3,55 +3,57 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import Header from "../components/Home/Header";
 import WhatIOffer from "../components/Home/WhatIOffer";
+import WebLogosCarousel from "../components/WebLogosCarousel";
+
+const projects = [
+  {
+    img: '/projects/AWS_CAPTURE.jpeg',
+    title: 'AWS E-commerce',
+    description: 'Full-stack e-commerce architecture in TypeScript, with separated frontend and backend modules. Implemented user authentication and management with AWS, along with purchase flow orchestration, prioritizing scalability and data integrity.',
+    href: 'http://aws-app-bucker.s3-website.us-east-2.amazonaws.com/'
+  },
+  {
+    img: '/projects/PORTFOLIO_CAPTURE.png',
+    title: 'Old portfolio',
+    description: 'Built an interactive portfolio using Next.js 14 and Tailwind CSS, featuring animations with Framer Motion, data visualizations with Chart.js, and 3D elements powered by Three.js and React Three Fiber. Integrated Prisma for data management and custom components to showcase projects and links in an engaging way.',
+    href: 'https://portfolio-valo.vercel.app/'
+  },
+  {
+    img: '/projects/TETRIS_CAPTURE.png',
+    title: 'Tetris game',
+    description: 'Built a Tetris game using Angular 17, focused on game logic and matrix operations to manage piece placement and rotation. Features modular components, smooth animations, and a clean architecture for scalability and maintainability.',
+    href: 'https://ng-tetris-latest.onrender.com/'
+  },
+  {
+    img: '/projects/PANEL_CAPTURE.png',
+    title: 'Login Panel',
+    description: 'Built an authentication panel using Next.js 14 and NextAuth, integrating Prisma for user management and Bcrypt for secure password hashing. The interface is modern with Tailwind CSS, supporting login, registration, and secure session management.',
+    href: 'https://auth-panel-valo234.vercel.app/'
+  }
+]
 
 function ProjectsSection() {
   return (
-    <article className='bg-black'>
+    <article className='bg-black' id="projects">
        <section className="my-4">
-        <h2 className="text-center text-white">My projects</h2>
+        <h2 className="text-center text-white">PROJECTS</h2>
        </section>
        <section className="container-fluid max-width p-5">
           <section className="row p-2">
-            <article className="col-12 col-md-6 p-2">
-              <figure className="card">
-                <img src="https://avatars.githubusercontent.com/u/12818452?v=4" className="card-img-top" alt="..."/>
-                <figcaption className="card-body">
-                  <h5 className="card-title">Card title</h5>
-                  <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  <a href="#" className="btn btn-primary">Go somewhere</a>
-                </figcaption>
-              </figure>
-            </article>
-            <article className="col-12 col-md-6 p-2">
-              <figure className="card">
-                <img src="https://avatars.githubusercontent.com/u/12818452?v=4" className="card-img-top" alt="..."/>
-                <figcaption className="card-body">
-                  <h5 className="card-title">Card title</h5>
-                  <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  <a href="#" className="btn btn-primary">Go somewhere</a>
-                </figcaption>
-              </figure>
-            </article>
-            <article className="col-12 col-md-6 p-2">
-              <figure className="card">
-                <img src="https://avatars.githubusercontent.com/u/12818452?v=4" className="card-img-top" alt="..."/>
-                <figcaption className="card-body">
-                  <h5 className="card-title">Card title</h5>
-                  <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  <a href="#" className="btn btn-primary">Go somewhere</a>
-                </figcaption>
-              </figure>
-            </article>
-            <article className="col-12 col-md-6 p-2">
-              <figure className="card">
-                <img src="https://avatars.githubusercontent.com/u/12818452?v=4" className="card-img-top" alt="..."/>
-                <figcaption className="card-body">
-                  <h5 className="card-title">Card title</h5>
-                  <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  <a href="#" className="btn btn-primary">Go somewhere</a>
-                </figcaption>
-              </figure>
-            </article>
+            {
+              projects.map(p => 
+                <article className="col-12 col-md-6 p-2">
+                  <figure className="card rounded-0">
+                    <img src={p.img} className="card-img-top" alt="..."/>
+                    <figcaption className="card-body">
+                      <h5 className="card-title">{p.title}</h5>
+                      <p className="card-text">{p.description}</p>
+                      <a href={p.href} className="btn btn-primary">Check this one</a>
+                    </figcaption>
+                  </figure>
+                </article>
+              )
+            }
           </section>
        </section>
     </article>
@@ -141,23 +143,23 @@ export default function Home() {
 
       <section className="bg-black text-white">
         <section className="container max-width py-5 row">
-            <article className='col-12 col-md-8'>
+            <article className='col-12 col-md-12'>
               <section>
                 <h2 className='display-5 opacity-75'>
                   And my goals?
                 </h2>
                 <p className='lead'>
-                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. At labore fuga pariatur, molestiae, animi non dolorem sed porro consectetur dignissimos facere laudantium neque error doloremque quis perferendis. Exercitationem, dicta eos!
+                   Ever since I started exploring web development, my goal has been to create experiences that connect people and ideas. I aim to keep learning new technologies, build projects that challenge me, and contribute to the global developer community. Every line of code is a step toward turning curiosity into impact and turning passion into practical solutions.
                 </p>
               </section>
             </article>
-            <article className='col-12 col-md-4'>
+            {/**<article className='col-12 col-md-4'>
               <section>
                 <figure>
                   <img src="https://dummyimage.com/200x200/000/fff&text=Headphones" alt="Headphones" className="img-fluid mt-3"/>
                 </figure>
               </section>
-            </article>
+            </article>**/}
         </section>
       </section>
 
@@ -230,18 +232,23 @@ export default function Home() {
               </p>
             </section>
           </article>
-          <article className='col-12 col-md-12'>
-            <section>
-              <figure>
-                <img src="https://dummyimage.com/200x200/000/fff&text=Headphones" alt="Headphones" className="img-fluid mt-3"/>
-              </figure>
-            </section>
+          <article className='col-12 row'>
+            <figure className="col-md-4">
+              <img src="/db-architecture.webp" alt="Headphones" className="img-fluid mt-3"/>
+            </figure>
+            <figure className="col-md-4">
+              <img src="/db-architecture.webp" alt="Headphones" className="img-fluid mt-3"/>
+            </figure>
+            <figure className="col-md-4">
+              <img src="/db-architecture.webp" alt="Headphones" className="img-fluid mt-3"/>
+            </figure>
           </article>
         </section>
       </section>
       <WhatIOffer/>
       <ExperienceSection/>
       <ProjectsSection/>
+      <WebLogosCarousel/>
     </>
   );
 }

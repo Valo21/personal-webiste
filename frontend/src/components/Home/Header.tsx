@@ -53,7 +53,7 @@ export default function Header() {
             <address>
               <p className="mb-1">
                 <strong>Email:</strong>{' '}
-                <a href="mailto:valentin@example.com">valentin.faciano@gmail.com</a>
+                <a href="mailto:valentin@example.com">valentin.faciano.dev@gmail.com</a>
               </p>
               <p className="mb-1">
                 <strong>Location:</strong> Tucumán, Argentina

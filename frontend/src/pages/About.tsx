@@ -48,10 +48,12 @@ export default function About() {
         </section>
         <MusicCorner/>
         <section className='max-width'>
-          <h2 className="mt-5 fw-bold">My Love for Cinema</h2>
-            <p>
-              I'm deeply inspired by storytelling, visuals, and sound. Movies have shaped how I think about design, structure, emotion, and even how I write code. Whether it's a sci-fi classic, an indie drama, or a mind-bending thriller — I always find something that sparks creativity.
-           </p>
+          <article className='container'>
+            <h2 className="mt-5 fw-bold">My Love for Cinema</h2>
+              <p>
+                I'm deeply inspired by storytelling, visuals, and sound. Movies have shaped how I think about design, structure, emotion, and even how I write code. Whether it's a sci-fi classic, an indie drama, or a mind-bending thriller — I always find something that sparks creativity.
+            </p>
+          </article>
         </section>
         <div className="container-fluid p-0 bg-dark text-white">
           <div className="col-md-12 d-flex flex-column justify-content-center align-items-start p-5">
@@ -66,13 +68,13 @@ export default function About() {
             <div id="movieFrameCarousel" className="carousel slide" data-bs-ride="carousel">
               <div className="carousel-inner shadow-lg">
                 <div className="carousel-item active">
-                  <img src="/frames/her.png" className="d-block w-100" alt="Frame 1" />
+                  <img height={425} src="/frames/her.png" className="d-block w-100" alt="Frame 1" />
                 </div>
                 <div className="carousel-item">
-                  <img src="/frames/her.png" className="d-block w-100" alt="Frame 2" />
+                  <img height={425} src="/frames/interestellar.jpg" className="d-block w-100" alt="Frame 2" />
                 </div>
                 <div className="carousel-item">
-                  <img src="/frames/her.png" className="d-block w-100" alt="Frame 3" />
+                  <img height={425} src="/frames/midnight.jpg" className="d-block w-100" alt="Frame 3" />
                 </div>
               </div>
               <button className="carousel-control-prev" type="button" data-bs-target="#movieFrameCarousel" data-bs-slide="prev" aria-label="Previous Slide">

@@ -2,13 +2,13 @@ import { Link } from "react-router";
 
 export default function NotFound() {
   return (
-    <section className="container text-center mt-5">
+    <section className="container text-center my-5">
       <div className="alert alert-danger" role="alert">
-        <h2>404 - Página no encontrada</h2>
-        <p>La URL que buscás no existe en esta app.</p>
+        <h2>404 - Page not found</h2>
+        <p>The url you are looking for doesn't exists or is under construction</p>
       </div>
       <Link to="/" className="btn btn-primary">
-        Volver al inicio
+        Back to home
       </Link>
     </section>
   )

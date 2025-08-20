@@ -5,6 +5,7 @@ import RootLayout from './components/RootLayout';
 import About from './pages/About';
 import NotFound from './pages/NotFound';
 import { ThemeProvider } from './context/ThemeContext';
+import MTA from './pages/MTA';
 
 export default function App() {
   return (
@@ -12,9 +13,9 @@ export default function App() {
       <BrowserRouter>
         <Routes>
           <Route path='/' element={<RootLayout/>}>
-            <Route index element={<Home/>}/>
-            <Route index element={<Home />} />   
-            <Route path='about' element={<About />} />   
+            <Route index element={<Home/>}/>  
+            <Route path='about' element={<About/>} />
+            <Route path='mta' element={<MTA/>} />      
             <Route path='*' element={<NotFound />} />
           </Route>
         </Routes>
