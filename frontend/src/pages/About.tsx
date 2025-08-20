@@ -55,28 +55,28 @@ export default function About() {
             </p>
           </article>
         </section>
-        <div className="container-fluid p-0 bg-dark text-white">
-          <div className="col-md-12 d-flex flex-column justify-content-center align-items-start p-5">
+        <section className="container-fluid p-0 bg-dark text-white">
+          <article className="col-md-12 d-flex flex-column justify-content-center align-items-start p-5">
             <h1 className="display-4 fw-bold w-100 text-center">
               <span className="opacity-75">Dive into</span> <em>the Frame</em>
             </h1>
             <p className="lead mt-3 w-100 text-center">
               A personal archive of scenes that inspire my creativity and love for cinema.
             </p>
-          </div>
-          <div className="col-md-12 d-flex justify-content-center align-items-center p-0">
-            <div id="movieFrameCarousel" className="carousel slide" data-bs-ride="carousel">
-              <div className="carousel-inner shadow-lg">
-                <div className="carousel-item active">
-                  <img height={425} src="/frames/her.png" className="d-block w-100" alt="Frame 1" />
-                </div>
-                <div className="carousel-item">
-                  <img height={425} src="/frames/interestellar.jpg" className="d-block w-100" alt="Frame 2" />
-                </div>
-                <div className="carousel-item">
-                  <img height={425} src="/frames/midnight.jpg" className="d-block w-100" alt="Frame 3" />
-                </div>
-              </div>
+          </article>
+          <article className="col-md-12 d-flex justify-content-center align-items-center p-0">
+            <section id="movieFrameCarousel" className="carousel slide w-100" data-bs-ride="carousel">
+              <article className="carousel-inner">
+                <figure className="carousel-item active ratio ratio-16x9">
+                  <img src="/frames/her.png" className="d-block w-100" alt="Frame 1" />
+                </figure>
+                <figure className="carousel-item ratio ratio-16x9">
+                  <img src="/frames/interestellar.jpg" className="d-block w-100" alt="Frame 2" />
+                </figure>
+                <figure className="carousel-item ratio ratio-16x9">
+                  <img src="/frames/midnight.jpg" className="d-block w-100" alt="Frame 3" />
+                </figure>
+              </article>
               <button className="carousel-control-prev" type="button" data-bs-target="#movieFrameCarousel" data-bs-slide="prev" aria-label="Previous Slide">
                 <span className="carousel-control-prev-icon" aria-hidden="true"></span>
                 <span className="visually-hidden">Previous</span>
@@ -85,9 +85,9 @@ export default function About() {
                 <span className="carousel-control-next-icon" aria-hidden="true"></span>
                 <span className="visually-hidden">Next</span>
               </button>
-            </div>
-          </div>
-        </div>
+            </section>
+          </article>
+        </section>
       </section>
       <JoinMeSection/>
     </>
