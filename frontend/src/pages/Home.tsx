@@ -60,13 +60,13 @@ function ProjectsSection() {
   )
 }
 
-function ExperienceSection() {
+/* function ExperienceSection() {
   return (
     <article className='bg-dark pt-5'>
       
     </article>
   )
-}
+} */
 
 export default function Home() {
   useEffect(() => {
